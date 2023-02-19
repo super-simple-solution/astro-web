@@ -31,4 +31,5 @@ jobs:
           ssh_private_key: ${{ secrets.TENCENT_PRIMARY_SSH_KEY }}
           local_path: './dist/*'
           remote_path: '/var/www/'
-          args: "-o ConnectTimeout=5"
+          sftp_only: true
+          sftpArgs: "-o ConnectTimeout=5"
