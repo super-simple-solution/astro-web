@@ -1,3 +1,4 @@
 {
   "extends": "astro/tsconfigs/base",
+  "include": ["astro.config.ts", "tailwind.config.ts"],
 }
