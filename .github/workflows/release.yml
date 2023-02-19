@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: pnpm build
       - name: Deploy To Server
-        uses: wlixcc/SFTP-Deploy-Action@v1.2 # 使用 SFTP 协议上传到腾讯云
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4 # 使用 SFTP 协议上传到腾讯云
         with:
           username: 'root'
           password: ${{ secrets.TENCENT_SERVER_PASSWORD }}
