@@ -6,7 +6,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  plugins: ['astro', 'prettier'],
+  plugins: ['astro', 'prettier', 'import'],
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:astro/recommended',
