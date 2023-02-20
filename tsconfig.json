@@ -1,4 +1,12 @@
 {
   "extends": "astro/tsconfigs/base",
   "include": ["astro.config.ts", "tailwind.config.ts"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@assets/*": ["src/assets/*"],
+      "@/layout/*": ["src/layouts/*"],
+    }
+  }
 }
